@@ -2214,6 +2214,7 @@ string_content  : tSTRING_CONTENT {
                    lexer.getCmdArgumentState().reset($<Long>3.longValue());
                    lexer.setState($<Integer>4);
                    lexer.setBraceNest($<Integer>5);
+                   // TODO(norswap): it it really necessary to reset the indent to 0 above then set it back here?
                    lexer.setHeredocIndent($<Integer>6);
                    lexer.setHeredocLineIndent(-1);
 
